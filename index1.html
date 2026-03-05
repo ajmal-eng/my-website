@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sign Up UI</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#0F172A;
+color:white;
+}
+
+/* CARD */
+
+.container{
+position:relative;
+width:850px;
+height:450px;
+background:#1E293B;
+border-radius:12px;
+overflow:hidden;
+display:flex;
+}
+
+/* FORM SIDE */
+
+.form-panel{
+width:50%;
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+h2{
+margin-bottom:25px;
+}
+
+/* INPUT */
+
+.input-box{
+position:relative;
+margin-bottom:25px;
+}
+
+.input-box input{
+width:100%;
+background:none;
+border:none;
+border-bottom:2px solid #7C3AED;
+outline:none;
+padding:10px 5px;
+color:white;
+font-size:16px;
+}
+
+/* FLOATING LABEL */
+
+.input-box label{
+position:absolute;
+left:5px;
+top:50%;
+transform:translateY(-50%);
+color:#aaa;
+pointer-events:none;
+transition:.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+top:-8px;
+font-size:12px;
+color:#7C3AED;
+}
+
+/* BUTTON */
+
+button{
+padding:10px;
+border:none;
+background:#7C3AED;
+color:white;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* LINK */
+
+.switch{
+margin-top:15px;
+font-size:14px;
+}
+
+
+.Link{
+--tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity, 1));
+}
+.Link:hover{
+text-decoration: underline;
+}
+/* PURPLE PANEL */
+
+.info-panel{
+	width: 100%;
+	background: linear-gradient(135deg,#7C3AED,#4C1D95);
+	clip-path: polygon(20% 0,100% 0,100% 100%,0% 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 172px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIGNUP FORM -->
+
+<div class="form-panel">
+
+<h2>Sign Up</h2>
+
+<div class="input-box">
+<input type="text" required>
+<label>Full Name</label>
+</div>
+
+<div class="input-box">
+<input type="email" required>
+<label>Email</label>
+</div>
+
+<div class="input-box">
+<input type="password" required>
+<label>Password</label>
+</div>
+
+<div class="input-box">
+<input type="password" required>
+<label>Confirm Password</label>
+</div>
+
+<button>Create Account</button>
+
+<p class="switch">
+Already have an account? <a href="file:///home/digihub/Music/s/login_signup1.html" style="  text-decoration: none;"><span class="Link">
+Login
+</span><a/>
+</p>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="info-panel">
+
+<h2>Join Us</h2>
+
+<p>Create your account and start your journey with us.</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
